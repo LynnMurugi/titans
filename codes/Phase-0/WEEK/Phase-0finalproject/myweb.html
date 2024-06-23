@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #5cd1aa;
+            
+        }
+
+        header {
+            background-color: #272997;
+            color: white;
+            padding: 1em 0;
+        }
+
+        nav ul {
+            
+            text-align: center;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            
+        }
+
+        section {
+            padding: 2em;
+            text-align: center;
+        }
+
+         img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin-top: 1em;
+            /*em means 16px*/
+        }
+
+        .project {
+            border: 1px solid #ddd;
+            margin: 1em 0;
+            padding: 1em;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        form label, form input, form textarea, form button {
+            width: 80%;
+            margin-bottom: 1em;
+        }
+
+        form input, form textarea {
+            padding: 0.5em;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        form button {
+            padding: 0.5em 2em;
+            border: none;
+            background-color: #333;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color:#272997;
+            color: white;
+            text-align: center;
+            padding: 6px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <!--navigation used in lists for easy styling-->
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Projects</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Discover my projects and get to know more about me.</p>
+    </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="https://images.unsplash.com/photo-1532074205216-d0e1f4b87368?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZGVmYXVsdCUyMHByb2ZpbGUlMjBwaG90b3N8ZW58MHx8MHx8fDA%3D" alt="My Photo">
+        <p>Hi, I'm LYNN , a web developer with a passion for creating beautiful and functional websites.<br>I am also a photographer and a DJ<BR> Below are some of my projects</p>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1</h3>
+            <p><b>Snaplink</b><br>DPhotography Website <br>Download and upload your collection,make memories with friends and link with other people around the world<br>#MAKING EVERY MEMORY WORTHWHILE</p>
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <p>GYM WEBSITE<br>Don't have time to go to the gym then dont worry ,we're bringing te gym closer to you<br>The website provides different levels of workout to do at home<br></p>
+        </div>
+        <p>For more projects,visit my github<a href="https://github.com/dashboard">Click here </a></p>
+    <p><i><b>Contact</b></i><br>lynnbilly376@gmail.com<br>Tel:+254732612062 </p>
+    </section>
+    <section id="feedback">
+        <h2>Feedback</h2>
+        <p>Kindly fill in your details and I will reach out soonest possible</p>
+        <form>
+            <label for="name">Name:</label>
+            <!--represents a caption for an item in a user interface-->
+            <input type="text" id="name" name="name" required>
+            <!--specifies the type of control and ID the unique identifier for the input element-->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+            <p><b>Thank You for your message</b></p>
+            
+            
+        </form>
+    </section>
+    <footer>
+        <p>MY PORTFOLIO</p>
+        <p>lynnbilly376@gmail.com<br>Tel:+254732612062</p>
+    </footer>
+</body>
+</html>
